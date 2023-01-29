@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    image: haiqin997/bosscms:v1.2
+    depends_on:
+      - bosscms
+    ports:
+      - "8080:8080"
+  bosscms:
+    image: bosscms:1.2
